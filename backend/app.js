@@ -58,8 +58,9 @@ mongoose.connect(database)
     .then(() => console.log('connect to db sucess'))
     .catch((err) => console.log('connect to db fail' + err));
 
-// const PORT = process.env.PORT || 5000
-// app.listen(PORT, () => console.log(`Server started on port ${PORT}`))
+    const PORT = process.env.PORT || 8000
+    app.listen(PORT) 
+    console.log("Server is running " + PORT)
 
 //-------------------------------------------------------------------
 //2. config body-parser library (get data from client-side)
