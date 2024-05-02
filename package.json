@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
+    "start": "node app.js",
+    "server": "nodemon app.js",
+    "client":"npm start front-end",
     "dev": "nodemon ./app.js",
     "build": "npm install && npm install --prefix front-end && npm run build --prefix front-end"
   },
